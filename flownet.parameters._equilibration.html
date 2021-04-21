@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>flownet.parameters._equilibration module &mdash; FlowNet  documentation</title>
   
@@ -17,7 +17,10 @@
 
   
   
+
   
+  
+
   
 
   
@@ -30,7 +33,6 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
         <script src="_static/configsuite_ext.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -135,6 +137,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -150,7 +154,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/flownet.parameters._equilibration.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -168,19 +172,22 @@
 <span id="flownet-parameters-equilibration-module"></span><h1>flownet.parameters._equilibration module<a class="headerlink" href="#module-flownet.parameters._equilibration" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="flownet.parameters._equilibration.Equilibration">
-<em class="property">class </em><code class="sig-prename descclassname">flownet.parameters._equilibration.</code><code class="sig-name descname">Equilibration</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">distribution_values</span><span class="p">:</span> <span class="n">pandas.core.frame.DataFrame</span></em>, <em class="sig-param"><span class="n">network</span><span class="p">:</span> <span class="n"><a class="reference internal" href="flownet.network_model._network_model.html#flownet.network_model._network_model.NetworkModel" title="flownet.network_model._network_model.NetworkModel">flownet.network_model._network_model.NetworkModel</a></span></em>, <em class="sig-param"><span class="n">ti2ci</span><span class="p">:</span> <span class="n">pandas.core.frame.DataFrame</span></em>, <em class="sig-param"><span class="n">eqlnum</span><span class="p">:</span> <span class="n">pandas.core.frame.DataFrame</span></em>, <em class="sig-param"><span class="n">datum_depth</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>List<span class="p">[</span>float<span class="p">]</span><span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">rsvd</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>pandas.core.frame.DataFrame<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters._equilibration.Equilibration" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">flownet.parameters._equilibration.</span></code><code class="sig-name descname"><span class="pre">Equilibration</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">distribution_values</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">network</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><a class="reference internal" href="flownet.network_model._network_model.html#flownet.network_model._network_model.NetworkModel" title="flownet.network_model._network_model.NetworkModel"><span class="pre">flownet.network_model._network_model.NetworkModel</span></a></span></em>, <em class="sig-param"><span class="n"><span class="pre">ti2ci</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">eqlnum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">datum_depth</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rsvd</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">pandas.core.frame.DataFrame</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters._equilibration.Equilibration" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="flownet.parameters._base_parameter.html#flownet.parameters._base_parameter.Parameter" title="flownet.parameters._base_parameter.Parameter"><code class="xref py py-class docutils literal notranslate"><span class="pre">flownet.parameters._base_parameter.Parameter</span></code></a></p>
 <p>Parameter type which takes care of stochastically drawn Equilibration parameters.</p>
 <dl>
 <dt>Args</dt><dd><dl>
-<dt>distribution_values:</dt><dd><p>A dataframe with five columns (“parameter”, “minimum”, “maximum”,
-“loguniform”, “eqlnum”) which state:</p>
+<dt>distribution_values:</dt><dd><p>A dataframe with eight columns (“parameter”, “minimum”, “maximum”, “mean”, “base”, “stddev”,
+“distribution”, “eqlnum”) which state:</p>
 <blockquote>
 <div><ul class="simple">
 <li><p>The name of the parameter,</p></li>
-<li><p>The minimum value of the parameter,</p></li>
-<li><p>The maximum value of the parameter,</p></li>
-<li><p>Whether the distribution is uniform of loguniform,</p></li>
+<li><p>The minimum value of the parameter (set to None if not applicable),</p></li>
+<li><p>The maximum value of the parameter (set to None if not applicable),</p></li>
+<li><p>The mean value of the parameter,</p></li>
+<li><p>The mode of the parameter distribution (set to None if not applicable),</p></li>
+<li><p>The standard deviation of the parameter,</p></li>
+<li><p>The type of probability distribution,</p></li>
 <li><p>To which EQLNUM this applies.</p></li>
 </ul>
 </div></blockquote>
@@ -194,28 +201,13 @@ rsvd: Pandas dataframe with a single rsvd table.</p>
 </dd>
 </dl>
 <dl class="py attribute">
-<dt id="flownet.parameters._equilibration.Equilibration._abc_cache">
-<code class="sig-name descname">_abc_cache</code><em class="property"> = &lt;_weakrefset.WeakSet object&gt;</em><a class="headerlink" href="#flownet.parameters._equilibration.Equilibration._abc_cache" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="flownet.parameters._equilibration.Equilibration._abc_negative_cache">
-<code class="sig-name descname">_abc_negative_cache</code><em class="property"> = &lt;_weakrefset.WeakSet object&gt;</em><a class="headerlink" href="#flownet.parameters._equilibration.Equilibration._abc_negative_cache" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="flownet.parameters._equilibration.Equilibration._abc_negative_cache_version">
-<code class="sig-name descname">_abc_negative_cache_version</code><em class="property"> = 49</em><a class="headerlink" href="#flownet.parameters._equilibration.Equilibration._abc_negative_cache_version" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="flownet.parameters._equilibration.Equilibration._abc_registry">
-<code class="sig-name descname">_abc_registry</code><em class="property"> = &lt;_weakrefset.WeakSet object&gt;</em><a class="headerlink" href="#flownet.parameters._equilibration.Equilibration._abc_registry" title="Permalink to this definition">¶</a></dt>
+<dt id="flownet.parameters._equilibration.Equilibration._abc_impl">
+<code class="sig-name descname"><span class="pre">_abc_impl</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;_abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#flownet.parameters._equilibration.Equilibration._abc_impl" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="flownet.parameters._equilibration.Equilibration.get_dims">
-<code class="sig-name descname">get_dims</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#flownet.parameters._equilibration.Equilibration.get_dims" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">get_dims</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Dict</span><a class="headerlink" href="#flownet.parameters._equilibration.Equilibration.get_dims" title="Permalink to this definition">¶</a></dt>
 <dd><p>Function to export the table dimensions used for memory allocation in Flow.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -226,7 +218,7 @@ rsvd: Pandas dataframe with a single rsvd table.</p>
 
 <dl class="py method">
 <dt id="flownet.parameters._equilibration.Equilibration.render_output">
-<code class="sig-name descname">render_output</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; Dict<a class="headerlink" href="#flownet.parameters._equilibration.Equilibration.render_output" title="Permalink to this definition">¶</a></dt>
+<code class="sig-name descname"><span class="pre">render_output</span></code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; <span class="pre">Dict</span><a class="headerlink" href="#flownet.parameters._equilibration.Equilibration.render_output" title="Permalink to this definition">¶</a></dt>
 <dd><p>Creates EQUIL and EQLNUM include content - which are given to the PROPS and GRID section.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
@@ -244,37 +236,29 @@ rsvd: Pandas dataframe with a single rsvd table.</p>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="flownet.parameters._fault_transmissibility.html" class="btn btn-neutral float-right" title="flownet.parameters._fault_transmissibility module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="flownet.parameters._base_parameter.html" class="btn btn-neutral float-left" title="flownet.parameters._base_parameter module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="flownet.parameters._fault_transmissibility.html" class="btn btn-neutral float-right" title="flownet.parameters._fault_transmissibility module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="flownet.parameters._base_parameter.html" class="btn btn-neutral float-left" title="flownet.parameters._base_parameter module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2020, Equinor
+        &#169; Copyright 2020, Equinor.
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 

@@ -1,6 +1,14 @@
 flownet.ert package
 ===================
 
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   flownet.ert.forward_models
+
 Submodules
 ----------
 

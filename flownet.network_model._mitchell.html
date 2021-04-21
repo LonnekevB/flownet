@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>flownet.network_model._mitchell module &mdash; FlowNet  documentation</title>
   
@@ -17,7 +17,10 @@
 
   
   
+
   
+  
+
   
 
   
@@ -30,7 +33,6 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
         <script src="_static/configsuite_ext.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -40,7 +42,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="flownet.network_model._network_model module" href="flownet.network_model._network_model.html" />
-    <link rel="prev" title="flownet.network_model._generate_connections module" href="flownet.network_model._generate_connections.html" /> 
+    <link rel="prev" title="flownet.network_model._hull module" href="flownet.network_model._hull.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -135,6 +137,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -150,7 +154,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/flownet.network_model._mitchell.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -168,7 +172,7 @@
 <span id="flownet-network-model-mitchell-module"></span><h1>flownet.network_model._mitchell module<a class="headerlink" href="#module-flownet.network_model._mitchell" title="Permalink to this headline">¶</a></h1>
 <dl class="py function">
 <dt id="flownet.network_model._mitchell.mitchell_best_candidate_modified_3d">
-<code class="sig-prename descclassname">flownet.network_model._mitchell.</code><code class="sig-name descname">mitchell_best_candidate_modified_3d</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">perforations</span><span class="p">:</span> <span class="n">List<span class="p">[</span>Union<span class="p">[</span>Tuple<span class="p">[</span>float<span class="p">, </span>float<span class="p">, </span>float<span class="p">]</span><span class="p">, </span>List<span class="p">[</span>float<span class="p">]</span><span class="p">, </span>Tuple<span class="p">[</span>Any<span class="p">, </span><span class="p">…</span><span class="p">]</span><span class="p">]</span><span class="p">]</span></span></em>, <em class="sig-param"><span class="n">num_added_flow_nodes</span><span class="p">:</span> <span class="n">int</span></em>, <em class="sig-param"><span class="n">num_candidates</span><span class="p">:</span> <span class="n">int</span> <span class="o">=</span> <span class="default_value">1000</span></em>, <em class="sig-param"><span class="n">hull_factor</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>float<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">concave_hull_bounding_boxes</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>numpy.ndarray<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em>, <em class="sig-param"><span class="n">random_seed</span><span class="p">:</span> <span class="n">Optional<span class="p">[</span>int<span class="p">]</span></span> <span class="o">=</span> <span class="default_value">None</span></em><span class="sig-paren">)</span> &#x2192; List<span class="p">[</span>Union<span class="p">[</span>Tuple<span class="p">[</span>float<span class="p">, </span>float<span class="p">, </span>float<span class="p">]</span><span class="p">, </span>List<span class="p">[</span>float<span class="p">]</span><span class="p">, </span>Tuple<span class="p">[</span>Any<span class="p">, </span><span class="p">…</span><span class="p">]</span><span class="p">]</span><span class="p">]</span><a class="headerlink" href="#flownet.network_model._mitchell.mitchell_best_candidate_modified_3d" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname"><span class="pre">flownet.network_model._mitchell.</span></code><code class="sig-name descname"><span class="pre">mitchell_best_candidate_modified_3d</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">perforations</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span> </span><span class="p"><span class="pre">…</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_added_flow_nodes</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_candidates</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hull_factor</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">place_nodes_in_volume_reservoir</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">concave_hull_bounding_boxes</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">random_seed</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span> </span><span class="p"><span class="pre">…</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#flownet.network_model._mitchell.mitchell_best_candidate_modified_3d" title="Permalink to this definition">¶</a></dt>
 <dd><p>Python implementation of a modified Mitchell’s Best-Candidate Algorithm to generate additional flow nodes in
 real field cases.</p>
 <p>The algorithm will generate locations for additional flow nodes where the distance to all existing flow nodes
@@ -181,9 +185,11 @@ supplied perforations.</p>
 [(xr_1, yr_1, zr_1), …, (xr_N, yr_N, zr_N)]</p></li>
 <li><p><strong>num_added_flow_nodes</strong> – Number of additional flow nodes to generate</p></li>
 <li><p><strong>num_candidates</strong> – Number of candidates to consider per additional flow nodes</p></li>
+<li><p><strong>place_nodes_in_volume_reservoir</strong> – When true, additional nodes will initially be placed inside
+the bounding box of the reservoir or layer instead of the bounding box of the well perforations.</p></li>
 <li><p><strong>hull_factor</strong> – Factor to linearly scale the convex hull with. Factor will
 scale the distance of each point from the centroid of all the points.
-When a None is supplied a box-shape is used.</p></li>
+Default defined in config parser is 1.2.</p></li>
 <li><p><strong>concave_hull_bounding_boxes</strong> – Numpy array with x, y, z min/max boundingboxes for each grid block</p></li>
 <li><p><strong>random_seed</strong> – Random seed to control the reproducibility of the FlowNet.</p></li>
 </ul>
@@ -199,6 +205,28 @@ When a None is supplied a box-shape is used.</p></li>
 </dl>
 </dd></dl>
 
+<dl class="py function">
+<dt id="flownet.network_model._mitchell.scale_convex_hull_perforations">
+<code class="sig-prename descclassname"><span class="pre">flownet.network_model._mitchell.</span></code><code class="sig-name descname"><span class="pre">scale_convex_hull_perforations</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">perforations</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span> </span><span class="p"><span class="pre">…</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hull_factor</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">,</span> </span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">,</span> </span><span class="pre">numpy.ndarray</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#flownet.network_model._mitchell.scale_convex_hull_perforations" title="Permalink to this definition">¶</a></dt>
+<dd><p>Linear scaling of the perforation points based on the hull_factor. Factor will
+scale the distance of each point from the centroid of all the points.
+These scaled points are used to create a convex hull in which additional flow nodes will be placed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>perforations</strong> – Python list of real well coordinate tuples
+[(xr_1, yr_1, zr_1), …, (xr_N, yr_N, zr_N)]</p></li>
+<li><p><strong>hull_factor</strong> – Factor to linearly scale the convex hull with. Factor will
+scale the distance of each point from the centroid of all the points.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>The tuple consisting of numpy arrays of x,y,z moved points based on the hull_factor,
+which are used further on in the code to create a convex hull around the real wells (perforations).</p>
+</dd>
+</dl>
+</dd></dl>
+
 </div>
 
 
@@ -206,37 +234,29 @@ When a None is supplied a box-shape is used.</p></li>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="flownet.network_model._network_model.html" class="btn btn-neutral float-right" title="flownet.network_model._network_model module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="flownet.network_model._generate_connections.html" class="btn btn-neutral float-left" title="flownet.network_model._generate_connections module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="flownet.network_model._network_model.html" class="btn btn-neutral float-right" title="flownet.network_model._network_model module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="flownet.network_model._hull.html" class="btn btn-neutral float-left" title="flownet.network_model._hull module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2020, Equinor
+        &#169; Copyright 2020, Equinor.
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 

@@ -1,0 +1,326 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>flownet.config_parser._config_parser_hyperparam module &mdash; FlowNet  documentation</title>
+  
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/configsuite_ext.css" type="text/css" />
+
+  
+  
+
+  
+  
+
+  
+
+  
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/configsuite_ext.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="flownet.config_parser._config_parser_pred module" href="flownet.config_parser._config_parser_pred.html" />
+    <link rel="prev" title="flownet.config_parser._config_parser module" href="flownet.config_parser._config_parser.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #eeeeee" >
+          
+
+          
+            <a href="index.html">
+          
+
+          
+            
+            <img src="_static/flownet_logo.svg" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="configuration_file.html">Configuration file example</a></li>
+<li class="toctree-l1"><a class="reference internal" href="examples.html">Examples</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">FlowNet Python API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html#flownet-package">flownet package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About FlowNet</a></li>
+</ul>
+
+            
+          
+        </div>
+        
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">FlowNet</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+        
+          <li><a href="api.html">FlowNet Python API</a> &raquo;</li>
+        
+          <li><a href="flownet.config_parser.html">flownet.config_parser package</a> &raquo;</li>
+        
+      <li>flownet.config_parser._config_parser_hyperparam module</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/flownet.config_parser._config_parser_hyperparam.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="module-flownet.config_parser._config_parser_hyperparam">
+<span id="flownet-config-parser-config-parser-hyperparam-module"></span><h1>flownet.config_parser._config_parser_hyperparam module<a class="headerlink" href="#module-flownet.config_parser._config_parser_hyperparam" title="Permalink to this headline">¶</a></h1>
+<dl class="py function">
+<dt id="flownet.config_parser._config_parser_hyperparam.create_ahm_config">
+<code class="sig-prename descclassname"><span class="pre">flownet.config_parser._config_parser_hyperparam.</span></code><code class="sig-name descname"><span class="pre">create_ahm_config</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">base_config</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pathlib.Path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hyperparameter_values</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">update_config</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pathlib.Path</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">&lt;property</span> <span class="pre">object</span> <span class="pre">at</span> <span class="pre">0x7facf61fb0b0&gt;</span><a class="headerlink" href="#flownet.config_parser._config_parser_hyperparam.create_ahm_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a flownet ahm config file from a hyperparameter config file and
+the known drawn values for the hyperparameters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>base_config</strong> – Path to the hyperparameter config file.</p></li>
+<li><p><strong>hyperparameter_values</strong> – List of actual hyperparameter values to be run.</p></li>
+<li><p><strong>update_config</strong> – Path to config used for updating, like CI.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the resulting ConfigSuite is invalid.</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A validated ConfigSuite with filled-in hyperparameter values ready to be
+run in flownet ahm.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="flownet.config_parser._config_parser_hyperparam.create_hyperopt_space">
+<code class="sig-prename descclassname"><span class="pre">flownet.config_parser._config_parser_hyperparam.</span></code><code class="sig-name descname"><span class="pre">create_hyperopt_space</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">key</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">values</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">hyperopt.pyll.base.Apply</span><a class="headerlink" href="#flownet.config_parser._config_parser_hyperparam.create_hyperopt_space" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to create a hyperopt search space for a single hyperparameter.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>key</strong> – Key in yaml file for the hyperparameter search space</p></li>
+<li><p><strong>name</strong> – Name of the search space type</p></li>
+<li><p><strong>values</strong> – Range of, or choices in the search space</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>ValueError</strong> – If the search space type does not exists a value error will be raised</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>A hyperopt search space for a single hyperparameter.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="flownet.config_parser._config_parser_hyperparam.list_hyperparameters">
+<code class="sig-prename descclassname"><span class="pre">flownet.config_parser._config_parser_hyperparam.</span></code><code class="sig-name descname"><span class="pre">list_hyperparameters</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hyperparameters</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_config</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">list</span><a class="headerlink" href="#flownet.config_parser._config_parser_hyperparam.list_hyperparameters" title="Permalink to this definition">¶</a></dt>
+<dd><p>List all hyperparameters defined in a yaml configuration file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>config_dict</strong> – configuration as dictionary</p></li>
+<li><p><strong>hyperparameters</strong> – list of hyperparameters already found (used for
+recursive calling of the function.)</p></li>
+<li><p><strong>in_config</strong> – path in the config file</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Return a list of all hyperparameters in the config.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="flownet.config_parser._config_parser_hyperparam.list_hyperparameters_names">
+<code class="sig-prename descclassname"><span class="pre">flownet.config_parser._config_parser_hyperparam.</span></code><code class="sig-name descname"><span class="pre">list_hyperparameters_names</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">config_dict</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hyperparameters</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_config</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">str</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#flownet.config_parser._config_parser_hyperparam.list_hyperparameters_names" title="Permalink to this definition">¶</a></dt>
+<dd><p>List all hyperparameter names defined in a yaml configuration file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>config_dict</strong> – configuration as dictionary</p></li>
+<li><p><strong>hyperparameters</strong> – list of hyperparameters already found (used for
+recursive calling of the function.)</p></li>
+<li><p><strong>in_config</strong> – path in the config file</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Return a list of strings of names of the hyperparameters</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="flownet.config_parser._config_parser_hyperparam.parse_hyperparam_config">
+<code class="sig-prename descclassname"><span class="pre">flownet.config_parser._config_parser_hyperparam.</span></code><code class="sig-name descname"><span class="pre">parse_hyperparam_config</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">base_config</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">pathlib.Path</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">list</span><a class="headerlink" href="#flownet.config_parser._config_parser_hyperparam.parse_hyperparam_config" title="Permalink to this definition">¶</a></dt>
+<dd><p>Parse a flownet configuration file for hyperparameter tuning. This function
+will not parse the entire file and check for errors. It will merely extract
+the hyperparameters.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>base_config</strong> – Path to the hyperparameter config file.</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>List of hyperparameters.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="flownet.config_parser._config_parser_hyperparam.update_hyper_config">
+<code class="sig-prename descclassname"><span class="pre">flownet.config_parser._config_parser_hyperparam.</span></code><code class="sig-name descname"><span class="pre">update_hyper_config</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hyper_dict</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">hyperparameter_values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">dict</span><span class="p"><span class="pre">,</span> </span><span class="pre">int</span><span class="p"><span class="pre">]</span></span><a class="headerlink" href="#flownet.config_parser._config_parser_hyperparam.update_hyper_config" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+        <a href="flownet.config_parser._config_parser_pred.html" class="btn btn-neutral float-right" title="flownet.config_parser._config_parser_pred module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="flownet.config_parser._config_parser.html" class="btn btn-neutral float-left" title="flownet.config_parser._config_parser module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &#169; Copyright 2020, Equinor.
+
+    </p>
+  </div>
+    
+    
+    
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    
+    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

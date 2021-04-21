@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>flownet.network_model._one_dimensional_model module &mdash; FlowNet  documentation</title>
   
@@ -17,7 +17,10 @@
 
   
   
+
   
+  
+
   
 
   
@@ -30,7 +33,6 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
         <script src="_static/configsuite_ext.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -135,6 +137,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -150,7 +154,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/flownet.network_model._one_dimensional_model.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -168,48 +172,48 @@
 <span id="flownet-network-model-one-dimensional-model-module"></span><h1>flownet.network_model._one_dimensional_model module<a class="headerlink" href="#module-flownet.network_model._one_dimensional_model" title="Permalink to this headline">¶</a></h1>
 <dl class="py class">
 <dt id="flownet.network_model._one_dimensional_model.OneDimensionalModel">
-<em class="property">class </em><code class="sig-prename descclassname">flownet.network_model._one_dimensional_model.</code><code class="sig-name descname">OneDimensionalModel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">start</span><span class="p">:</span> <span class="n">Union<span class="p">[</span>Tuple<span class="p">[</span>float<span class="p">, </span>float<span class="p">, </span>float<span class="p">]</span><span class="p">, </span>List<span class="p">[</span>float<span class="p">]</span><span class="p">, </span>Tuple<span class="p">[</span>Any<span class="p">, </span><span class="p">…</span><span class="p">]</span><span class="p">]</span></span></em>, <em class="sig-param"><span class="n">end</span><span class="p">:</span> <span class="n">Union<span class="p">[</span>Tuple<span class="p">[</span>float<span class="p">, </span>float<span class="p">, </span>float<span class="p">]</span><span class="p">, </span>List<span class="p">[</span>float<span class="p">]</span><span class="p">, </span>Tuple<span class="p">[</span>Any<span class="p">, </span><span class="p">…</span><span class="p">]</span><span class="p">]</span></span></em>, <em class="sig-param"><span class="n">cell_length</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">area</span><span class="p">:</span> <span class="n">float</span></em>, <em class="sig-param"><span class="n">append_inactive</span><span class="p">:</span> <span class="n">bool</span> <span class="o">=</span> <span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">flownet.network_model._one_dimensional_model.</span></code><code class="sig-name descname"><span class="pre">OneDimensionalModel</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span> </span><span class="p"><span class="pre">…</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">,</span> </span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">,</span> </span><span class="pre">Tuple</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">,</span> </span><span class="p"><span class="pre">…</span></span><span class="p"><span class="pre">]</span></span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_length</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">area</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">append_inactive</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">bool</span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
 <dt id="flownet.network_model._one_dimensional_model.OneDimensionalModel.cell_length">
-<em class="property">property </em><code class="sig-name descname">cell_length</code><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel.cell_length" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">cell_length</span></code><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel.cell_length" title="Permalink to this definition">¶</a></dt>
 <dd><p>Actual cell length of the grid cells.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="flownet.network_model._one_dimensional_model.OneDimensionalModel.df_coord">
-<em class="property">property </em><code class="sig-name descname">df_coord</code><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel.df_coord" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">df_coord</span></code><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel.df_coord" title="Permalink to this definition">¶</a></dt>
 <dd><p>Returns a dataframe of the grid cells with corresponding coordinates</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="flownet.network_model._one_dimensional_model.OneDimensionalModel.end">
-<em class="property">property </em><code class="sig-name descname">end</code><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel.end" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">end</span></code><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel.end" title="Permalink to this definition">¶</a></dt>
 <dd><p>End position of model (x, y, z) returned as numpy array.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="flownet.network_model._one_dimensional_model.OneDimensionalModel.length">
-<em class="property">property </em><code class="sig-name descname">length</code><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel.length" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">length</span></code><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel.length" title="Permalink to this definition">¶</a></dt>
 <dd><p>Length of one dimensional model, measured as distance between
 first and last grid cell mid point.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="flownet.network_model._one_dimensional_model.OneDimensionalModel.n">
-<em class="property">property </em><code class="sig-name descname">n</code><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel.n" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">n</span></code><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel.n" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number of grid cells in model, counting both active and inactive.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="flownet.network_model._one_dimensional_model.OneDimensionalModel.nactive">
-<em class="property">property </em><code class="sig-name descname">nactive</code><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel.nactive" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">nactive</span></code><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel.nactive" title="Permalink to this definition">¶</a></dt>
 <dd><p>Number active grid cells in model.</p>
 </dd></dl>
 
 <dl class="py method">
 <dt id="flownet.network_model._one_dimensional_model.OneDimensionalModel.start">
-<em class="property">property </em><code class="sig-name descname">start</code><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel.start" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">start</span></code><a class="headerlink" href="#flownet.network_model._one_dimensional_model.OneDimensionalModel.start" title="Permalink to this definition">¶</a></dt>
 <dd><p>Start position of model (x, y, z) returned as numpy array.</p>
 </dd></dl>
 
@@ -222,37 +226,29 @@ first and last grid cell mid point.</p>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="flownet.parameters.html" class="btn btn-neutral float-right" title="flownet.parameters package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="flownet.network_model._network_model.html" class="btn btn-neutral float-left" title="flownet.network_model._network_model module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="flownet.parameters.html" class="btn btn-neutral float-right" title="flownet.parameters package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="flownet.network_model._network_model.html" class="btn btn-neutral float-left" title="flownet.network_model._network_model module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2020, Equinor
+        &#169; Copyright 2020, Equinor.
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 

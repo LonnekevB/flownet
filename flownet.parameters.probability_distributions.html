@@ -3,9 +3,9 @@
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>flownet.parameters.probability_distributions module &mdash; FlowNet  documentation</title>
   
@@ -17,7 +17,10 @@
 
   
   
+
   
+  
+
   
 
   
@@ -30,7 +33,6 @@
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
         <script src="_static/doctools.js"></script>
-        <script src="_static/language_data.js"></script>
         <script src="_static/configsuite_ext.js"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
@@ -135,6 +137,8 @@
 
 
 
+
+
 <div role="navigation" aria-label="breadcrumbs navigation">
 
   <ul class="wy-breadcrumbs">
@@ -150,7 +154,7 @@
     
       <li class="wy-breadcrumbs-aside">
         
-            
+          
             <a href="_sources/flownet.parameters.probability_distributions.rst.txt" rel="nofollow"> View page source</a>
           
         
@@ -169,129 +173,494 @@
 <p>Defines the different probability distributions. These are used by the
 parameter class definitions.</p>
 <dl class="py class">
-<dt id="flownet.parameters.probability_distributions.LogUniformDistribution">
-<em class="property">class </em><code class="sig-prename descclassname">flownet.parameters.probability_distributions.</code><code class="sig-name descname">LogUniformDistribution</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">minimum</span></em>, <em class="sig-param"><span class="n">maximum</span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.LogUniformDistribution" title="Permalink to this definition">¶</a></dt>
+<dt id="flownet.parameters.probability_distributions.Constant">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">flownet.parameters.probability_distributions.</span></code><code class="sig-name descname"><span class="pre">Constant</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">const</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.Constant" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#flownet.parameters.probability_distributions.ProbabilityDistribution" title="flownet.parameters.probability_distributions.ProbabilityDistribution"><code class="xref py py-class docutils literal notranslate"><span class="pre">flownet.parameters.probability_distributions.ProbabilityDistribution</span></code></a></p>
 <dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.LogUniformDistribution._abc_cache">
-<code class="sig-name descname">_abc_cache</code><em class="property"> = &lt;_weakrefset.WeakSet object&gt;</em><a class="headerlink" href="#flownet.parameters.probability_distributions.LogUniformDistribution._abc_cache" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.LogUniformDistribution._abc_negative_cache">
-<code class="sig-name descname">_abc_negative_cache</code><em class="property"> = &lt;_weakrefset.WeakSet object&gt;</em><a class="headerlink" href="#flownet.parameters.probability_distributions.LogUniformDistribution._abc_negative_cache" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.LogUniformDistribution._abc_negative_cache_version">
-<code class="sig-name descname">_abc_negative_cache_version</code><em class="property"> = 49</em><a class="headerlink" href="#flownet.parameters.probability_distributions.LogUniformDistribution._abc_negative_cache_version" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.LogUniformDistribution._abc_registry">
-<code class="sig-name descname">_abc_registry</code><em class="property"> = &lt;_weakrefset.WeakSet object&gt;</em><a class="headerlink" href="#flownet.parameters.probability_distributions.LogUniformDistribution._abc_registry" title="Permalink to this definition">¶</a></dt>
+<dt id="flownet.parameters.probability_distributions.Constant._abc_impl">
+<code class="sig-name descname"><span class="pre">_abc_impl</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;_abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.Constant._abc_impl" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
+<dt id="flownet.parameters.probability_distributions.Constant.ert_gen_kw">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">ert_gen_kw</span></code><a class="headerlink" href="#flownet.parameters.probability_distributions.Constant.ert_gen_kw" title="Permalink to this definition">¶</a></dt>
+<dd><p>string representing an ERT “CONST CONSTANT” distribution keyword for use in GEN_KW</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="flownet.parameters.probability_distributions.Constant.update_distribution">
+<code class="sig-name descname"><span class="pre">update_distribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stddev</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.Constant.update_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that updates the parameters that defines the probability distribution</p>
+<p>Providing a value for either the mean, the mode, the minimum or the maximum will change the constant value,
+but ONLY one value can be provided.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>minimum</strong> – The minimum values of the updated distribution</p></li>
+<li><p><strong>mean</strong> – The mean value of the updated distribution</p></li>
+<li><p><strong>mode</strong> – The mode of the updated distribution</p></li>
+<li><p><strong>maximum</strong> – The maximum value of the updated distribution</p></li>
+<li><p><strong>stddev</strong> – The standard deviation of the updated distribution</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Nothing</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="flownet.parameters.probability_distributions.LogNormalDistribution">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">flownet.parameters.probability_distributions.</span></code><code class="sig-name descname"><span class="pre">LogNormalDistribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mean</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stddev</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.LogNormalDistribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flownet.parameters.probability_distributions.ProbabilityDistribution" title="flownet.parameters.probability_distributions.ProbabilityDistribution"><code class="xref py py-class docutils literal notranslate"><span class="pre">flownet.parameters.probability_distributions.ProbabilityDistribution</span></code></a></p>
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.LogNormalDistribution._abc_impl">
+<code class="sig-name descname"><span class="pre">_abc_impl</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;_abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.LogNormalDistribution._abc_impl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="flownet.parameters.probability_distributions.LogNormalDistribution.ert_gen_kw">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">ert_gen_kw</span></code><a class="headerlink" href="#flownet.parameters.probability_distributions.LogNormalDistribution.ert_gen_kw" title="Permalink to this definition">¶</a></dt>
+<dd><p>string representing an ERT “LOGNORMAL MEAN STDDEV” distribution keyword for use in GEN_KW</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="flownet.parameters.probability_distributions.LogNormalDistribution.update_distribution">
+<code class="sig-name descname"><span class="pre">update_distribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stddev</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.LogNormalDistribution.update_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that updates the parameters that defines the probability distribution</p>
+<p>In the lognormal distribution one or both of the mean and the standard deviation can be changed.
+Providing any other value as input here (mode, minimum, maximum) will have no effect.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>minimum</strong> – The minimum values of the updated distribution</p></li>
+<li><p><strong>mean</strong> – The mean value of the updated distribution</p></li>
+<li><p><strong>mode</strong> – The mode of the updated distribution</p></li>
+<li><p><strong>maximum</strong> – The maximum value of the updated distribution</p></li>
+<li><p><strong>stddev</strong> – The standard deviation of the updated distribution</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Nothing</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="flownet.parameters.probability_distributions.LogUniformDistribution">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">flownet.parameters.probability_distributions.</span></code><code class="sig-name descname"><span class="pre">LogUniformDistribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.LogUniformDistribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flownet.parameters.probability_distributions.ProbabilityDistribution" title="flownet.parameters.probability_distributions.ProbabilityDistribution"><code class="xref py py-class docutils literal notranslate"><span class="pre">flownet.parameters.probability_distributions.ProbabilityDistribution</span></code></a></p>
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.LogUniformDistribution._abc_impl">
+<code class="sig-name descname"><span class="pre">_abc_impl</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;_abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.LogUniformDistribution._abc_impl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="flownet.parameters.probability_distributions.LogUniformDistribution._find_dist_minmax">
+<code class="sig-name descname"><span class="pre">_find_dist_minmax</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mean_val</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_val</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_val</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> &#x2192; <span class="pre">float</span><a class="headerlink" href="#flownet.parameters.probability_distributions.LogUniformDistribution._find_dist_minmax" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find the distribution min or max for a loguniform distribution, assuming only
+one of these and the mean are given</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>min_val</strong> – minimum value for the distribution</p></li>
+<li><p><strong>max_val</strong> – maximum value for the distribution</p></li>
+<li><p><strong>mean_val</strong> – mean value for the distribution</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>missing value (minimum if maximum is provided as input, maximum if minimum is provided)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt id="flownet.parameters.probability_distributions.LogUniformDistribution.ert_gen_kw">
-<em class="property">property </em><code class="sig-name descname">ert_gen_kw</code><a class="headerlink" href="#flownet.parameters.probability_distributions.LogUniformDistribution.ert_gen_kw" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">ert_gen_kw</span></code><a class="headerlink" href="#flownet.parameters.probability_distributions.LogUniformDistribution.ert_gen_kw" title="Permalink to this definition">¶</a></dt>
 <dd><p>string representing an ERT “LOGUNIF MIN MAX” distribution keyword for use in GEN_KW</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="flownet.parameters.probability_distributions.LogUniformDistribution.update_distribution">
+<code class="sig-name descname"><span class="pre">update_distribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stddev</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.LogUniformDistribution.update_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that updates the parameters that defines the probability distribution</p>
+<dl class="simple">
+<dt>The following input combinations will make changes to the distribution:</dt><dd><ul class="simple">
+<li><p>Giving a new minimum value as input will trigger a calculation of a new mean and stddev</p></li>
+<li><p>Giving a new maximum value as input will trigger a calculation of a new mean and stddev</p></li>
+<li><dl class="simple">
+<dt>Giving a new mean value as input requires a new minimum OR maximum value to be defined also</dt><dd><ul>
+<li><p>A new mean value and a new minimum value will trigger an update of the maximum value and the stddev</p></li>
+<li><p>A new mean value and a new maximum value will trigger an update of the minimum value and the stddev</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Providing values for stddev or mode has no effect here, since in the loguniform distribution the mode is
+equal to the minimum value, and the stddev is caluculated from the minimum and maximum values</p>
+<p>Providing a new mean, a new minimum and a new maximum value (all three of them) will trigger an error</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>minimum</strong> – The minimum values of the updated distribution</p></li>
+<li><p><strong>mean</strong> – The mean value of the updated distribution</p></li>
+<li><p><strong>mode</strong> – The mode of the updated distribution</p></li>
+<li><p><strong>maximum</strong> – The maximum value of the updated distribution</p></li>
+<li><p><strong>stddev</strong> – The standard deviation of the updated distribution</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Nothing</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="flownet.parameters.probability_distributions.NormalDistribution">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">flownet.parameters.probability_distributions.</span></code><code class="sig-name descname"><span class="pre">NormalDistribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mean</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stddev</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.NormalDistribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flownet.parameters.probability_distributions.ProbabilityDistribution" title="flownet.parameters.probability_distributions.ProbabilityDistribution"><code class="xref py py-class docutils literal notranslate"><span class="pre">flownet.parameters.probability_distributions.ProbabilityDistribution</span></code></a></p>
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.NormalDistribution._abc_impl">
+<code class="sig-name descname"><span class="pre">_abc_impl</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;_abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.NormalDistribution._abc_impl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="flownet.parameters.probability_distributions.NormalDistribution.ert_gen_kw">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">ert_gen_kw</span></code><a class="headerlink" href="#flownet.parameters.probability_distributions.NormalDistribution.ert_gen_kw" title="Permalink to this definition">¶</a></dt>
+<dd><p>string representing an ERT “NORMAL MEAN STDDEV” distribution keyword for use in GEN_KW</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="flownet.parameters.probability_distributions.NormalDistribution.update_distribution">
+<code class="sig-name descname"><span class="pre">update_distribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stddev</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.NormalDistribution.update_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that updates the parameters that defines the probability distribution.</p>
+<p>In the normal distribution one or both of the mean and the standard deviation can be changed.
+Providing any other value as input here (mode, minimum, maximum) will have no effect.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>minimum</strong> – The minimum values of the updated distribution</p></li>
+<li><p><strong>mean</strong> – The mean value of the updated distribution</p></li>
+<li><p><strong>mode</strong> – The mode of the updated distribution</p></li>
+<li><p><strong>maximum</strong> – The maximum value of the updated distribution</p></li>
+<li><p><strong>stddev</strong> – The standard deviation of the updated distribution</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Nothing</p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt id="flownet.parameters.probability_distributions.ProbabilityDistribution">
-<em class="property">class </em><code class="sig-prename descclassname">flownet.parameters.probability_distributions.</code><code class="sig-name descname">ProbabilityDistribution</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">minimum</span></em>, <em class="sig-param"><span class="n">maximum</span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.ProbabilityDistribution" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">flownet.parameters.probability_distributions.</span></code><code class="sig-name descname"><span class="pre">ProbabilityDistribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.ProbabilityDistribution" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">abc.ABC</span></code></p>
 <dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.ProbabilityDistribution._abc_cache">
-<code class="sig-name descname">_abc_cache</code><em class="property"> = &lt;_weakrefset.WeakSet object&gt;</em><a class="headerlink" href="#flownet.parameters.probability_distributions.ProbabilityDistribution._abc_cache" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.ProbabilityDistribution._abc_negative_cache">
-<code class="sig-name descname">_abc_negative_cache</code><em class="property"> = &lt;_weakrefset.WeakSet object&gt;</em><a class="headerlink" href="#flownet.parameters.probability_distributions.ProbabilityDistribution._abc_negative_cache" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.ProbabilityDistribution._abc_negative_cache_version">
-<code class="sig-name descname">_abc_negative_cache_version</code><em class="property"> = 49</em><a class="headerlink" href="#flownet.parameters.probability_distributions.ProbabilityDistribution._abc_negative_cache_version" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.ProbabilityDistribution._abc_registry">
-<code class="sig-name descname">_abc_registry</code><em class="property"> = &lt;_weakrefset.WeakSet object&gt;</em><a class="headerlink" href="#flownet.parameters.probability_distributions.ProbabilityDistribution._abc_registry" title="Permalink to this definition">¶</a></dt>
+<dt id="flownet.parameters.probability_distributions.ProbabilityDistribution._abc_impl">
+<code class="sig-name descname"><span class="pre">_abc_impl</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;_abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.ProbabilityDistribution._abc_impl" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="flownet.parameters.probability_distributions.ProbabilityDistribution.ert_gen_kw">
-<em class="property">abstract property </em><code class="sig-name descname">ert_gen_kw</code><a class="headerlink" href="#flownet.parameters.probability_distributions.ProbabilityDistribution.ert_gen_kw" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">abstract</span> <span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">ert_gen_kw</span></code><a class="headerlink" href="#flownet.parameters.probability_distributions.ProbabilityDistribution.ert_gen_kw" title="Permalink to this definition">¶</a></dt>
 <dd><p>A string representing what ERT needs in GEN_KW</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="flownet.parameters.probability_distributions.ProbabilityDistribution.update_distribution">
+<em class="property"><span class="pre">abstract</span> </em><code class="sig-name descname"><span class="pre">update_distribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stddev</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.ProbabilityDistribution.update_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function to update parameters for the various distributions</p>
 </dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt id="flownet.parameters.probability_distributions.TriangularDistribution">
-<em class="property">class </em><code class="sig-prename descclassname">flownet.parameters.probability_distributions.</code><code class="sig-name descname">TriangularDistribution</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">minimum</span></em>, <em class="sig-param"><span class="n">maximum</span></em>, <em class="sig-param"><span class="n">mode</span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">flownet.parameters.probability_distributions.</span></code><code class="sig-name descname"><span class="pre">TriangularDistribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#flownet.parameters.probability_distributions.ProbabilityDistribution" title="flownet.parameters.probability_distributions.ProbabilityDistribution"><code class="xref py py-class docutils literal notranslate"><span class="pre">flownet.parameters.probability_distributions.ProbabilityDistribution</span></code></a></p>
 <dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.TriangularDistribution._abc_cache">
-<code class="sig-name descname">_abc_cache</code><em class="property"> = &lt;_weakrefset.WeakSet object&gt;</em><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution._abc_cache" title="Permalink to this definition">¶</a></dt>
+<dt id="flownet.parameters.probability_distributions.TriangularDistribution._abc_impl">
+<code class="sig-name descname"><span class="pre">_abc_impl</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;_abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution._abc_impl" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.TriangularDistribution._abc_negative_cache">
-<code class="sig-name descname">_abc_negative_cache</code><em class="property"> = &lt;_weakrefset.WeakSet object&gt;</em><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution._abc_negative_cache" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.TriangularDistribution._abc_negative_cache_version">
-<code class="sig-name descname">_abc_negative_cache_version</code><em class="property"> = 49</em><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution._abc_negative_cache_version" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.TriangularDistribution._abc_registry">
-<code class="sig-name descname">_abc_registry</code><em class="property"> = &lt;_weakrefset.WeakSet object&gt;</em><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution._abc_registry" title="Permalink to this definition">¶</a></dt>
+<dt id="flownet.parameters.probability_distributions.TriangularDistribution.defined">
+<code class="sig-name descname"><span class="pre">defined</span></code><em class="property"><span class="pre">:</span> <span class="pre">bool</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution.defined" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="flownet.parameters.probability_distributions.TriangularDistribution.ert_gen_kw">
-<em class="property">property </em><code class="sig-name descname">ert_gen_kw</code><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution.ert_gen_kw" title="Permalink to this definition">¶</a></dt>
-<dd><p>string representing an ERT “TRIANGULAR MIN MAX” distribution keyword for use in GEN_KW</p>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">ert_gen_kw</span></code><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution.ert_gen_kw" title="Permalink to this definition">¶</a></dt>
+<dd><p>string representing an ERT “TRIANGULAR MIN MODE MAX” distribution keyword for use in GEN_KW</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.TriangularDistribution.maximum">
+<code class="sig-name descname"><span class="pre">maximum</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution.maximum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.TriangularDistribution.mean">
+<code class="sig-name descname"><span class="pre">mean</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution.mean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.TriangularDistribution.minimum">
+<code class="sig-name descname"><span class="pre">minimum</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution.minimum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.TriangularDistribution.mode">
+<code class="sig-name descname"><span class="pre">mode</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution.mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.TriangularDistribution.name">
+<code class="sig-name descname"><span class="pre">name</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.TriangularDistribution.stddev">
+<code class="sig-name descname"><span class="pre">stddev</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution.stddev" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="flownet.parameters.probability_distributions.TriangularDistribution.update_distribution">
+<code class="sig-name descname"><span class="pre">update_distribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stddev</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.TriangularDistribution.update_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that updates the parameters that defines the probability distribution</p>
+<dl>
+<dt>The following input combinations will make changes to the distribution:</dt><dd><ul class="simple">
+<li><p>Giving a new minimum value as input will trigger a calculation of a new mean and stddev</p></li>
+<li><p>Giving a new maximum value as input will trigger a calculation of a new mean and stddev</p></li>
+<li><p>Giving a new mode as input will trigger a calculation of a new mean and stddev</p></li>
+<li><p>Giving a new mean value as input requires a new minimum/maximum OR mode/maximum OR minimum/mode values</p></li>
+</ul>
+<dl class="simple">
+<dt>to be defined also:</dt><dd><ul class="simple">
+<li><p>A new mean, minimum and mode will trigger an update of the maximum value and the stddev</p></li>
+<li><p>A new mean, mode and maximum value will trigger an update of the minimum value and the stddev</p></li>
+<li><p>A new mean, minimum and maximum value will trigger an update of the mode and the stddev</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+</dl>
+<p>Providing values for stddev has no effect here.</p>
+<p>Providing a new mean, minimum, maximum and mode (all four of them) will trigger an error</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>minimum</strong> – The minimum values of the updated distribution</p></li>
+<li><p><strong>mean</strong> – The mean value of the updated distribution</p></li>
+<li><p><strong>mode</strong> – The mode of the updated distribution</p></li>
+<li><p><strong>maximum</strong> – The maximum value of the updated distribution</p></li>
+<li><p><strong>stddev</strong> – The standard deviation of the updated distribution</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Nothing</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="flownet.parameters.probability_distributions.TruncatedNormalDistribution">
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">flownet.parameters.probability_distributions.</span></code><code class="sig-name descname"><span class="pre">TruncatedNormalDistribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mean</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">float</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stddev</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">minimum</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.TruncatedNormalDistribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#flownet.parameters.probability_distributions.ProbabilityDistribution" title="flownet.parameters.probability_distributions.ProbabilityDistribution"><code class="xref py py-class docutils literal notranslate"><span class="pre">flownet.parameters.probability_distributions.ProbabilityDistribution</span></code></a></p>
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.TruncatedNormalDistribution._abc_impl">
+<code class="sig-name descname"><span class="pre">_abc_impl</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;_abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TruncatedNormalDistribution._abc_impl" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.TruncatedNormalDistribution.defined">
+<code class="sig-name descname"><span class="pre">defined</span></code><em class="property"><span class="pre">:</span> <span class="pre">bool</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TruncatedNormalDistribution.defined" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="flownet.parameters.probability_distributions.TruncatedNormalDistribution.ert_gen_kw">
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">ert_gen_kw</span></code><a class="headerlink" href="#flownet.parameters.probability_distributions.TruncatedNormalDistribution.ert_gen_kw" title="Permalink to this definition">¶</a></dt>
+<dd><p>string representing an ERT “TRUNCATED_NORMAL MEAN STDDEV” distribution keyword for use in GEN_KW</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.TruncatedNormalDistribution.maximum">
+<code class="sig-name descname"><span class="pre">maximum</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TruncatedNormalDistribution.maximum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.TruncatedNormalDistribution.mean">
+<code class="sig-name descname"><span class="pre">mean</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TruncatedNormalDistribution.mean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.TruncatedNormalDistribution.minimum">
+<code class="sig-name descname"><span class="pre">minimum</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TruncatedNormalDistribution.minimum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.TruncatedNormalDistribution.mode">
+<code class="sig-name descname"><span class="pre">mode</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TruncatedNormalDistribution.mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.TruncatedNormalDistribution.name">
+<code class="sig-name descname"><span class="pre">name</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TruncatedNormalDistribution.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.TruncatedNormalDistribution.stddev">
+<code class="sig-name descname"><span class="pre">stddev</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.TruncatedNormalDistribution.stddev" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="flownet.parameters.probability_distributions.TruncatedNormalDistribution.update_distribution">
+<code class="sig-name descname"><span class="pre">update_distribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stddev</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.TruncatedNormalDistribution.update_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that updates the parameters that defines the probability distribution</p>
+<dl class="simple">
+<dt>In the truncated normal distribution one or more of the following can be changed:</dt><dd><p><a href="#id1"><span class="problematic" id="id2">*</span></a>The mean
+<a href="#id3"><span class="problematic" id="id4">*</span></a>The standard deviation
+<a href="#id5"><span class="problematic" id="id6">*</span></a>The minimum value
+<a href="#id7"><span class="problematic" id="id8">*</span></a>The maximum value</p>
+</dd>
+</dl>
+<p>Providing a value for the mode has no effect here</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>minimum</strong> – The minimum values of the updated distribution</p></li>
+<li><p><strong>mean</strong> – The mean value of the updated distribution</p></li>
+<li><p><strong>mode</strong> – The mode of the updated distribution</p></li>
+<li><p><strong>maximum</strong> – The maximum value of the updated distribution</p></li>
+<li><p><strong>stddev</strong> – The standard deviation of the updated distribution</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Nothing</p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
 
 <dl class="py class">
 <dt id="flownet.parameters.probability_distributions.UniformDistribution">
-<em class="property">class </em><code class="sig-prename descclassname">flownet.parameters.probability_distributions.</code><code class="sig-name descname">UniformDistribution</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">minimum</span></em>, <em class="sig-param"><span class="n">maximum</span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution" title="Permalink to this definition">¶</a></dt>
+<em class="property"><span class="pre">class</span> </em><code class="sig-prename descclassname"><span class="pre">flownet.parameters.probability_distributions.</span></code><code class="sig-name descname"><span class="pre">UniformDistribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution" title="Permalink to this definition">¶</a></dt>
 <dd><p>Bases: <a class="reference internal" href="#flownet.parameters.probability_distributions.ProbabilityDistribution" title="flownet.parameters.probability_distributions.ProbabilityDistribution"><code class="xref py py-class docutils literal notranslate"><span class="pre">flownet.parameters.probability_distributions.ProbabilityDistribution</span></code></a></p>
+<p>The UniformDistribution class</p>
+<dl class="simple">
+<dt>The class is initialized by providing ONLY two of the following inputs different from None:</dt><dd><ul class="simple">
+<li><p>The minimum value of the uniform distribution</p></li>
+<li><p>The mean value of the uniform distribution</p></li>
+<li><p>The maximum value of the uniform distribution</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>minimum</strong> (<em>float</em>) – The minimum value of the distribution</p></li>
+<li><p><strong>mean</strong> (<em>float</em>) – The mean value of the distribution</p></li>
+<li><p><strong>maximum</strong> (<em>float</em>) – The maximum value of the distribution</p></li>
+</ul>
+</dd>
+</dl>
 <dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.UniformDistribution._abc_cache">
-<code class="sig-name descname">_abc_cache</code><em class="property"> = &lt;_weakrefset.WeakSet object&gt;</em><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution._abc_cache" title="Permalink to this definition">¶</a></dt>
+<dt id="flownet.parameters.probability_distributions.UniformDistribution._abc_impl">
+<code class="sig-name descname"><span class="pre">_abc_impl</span></code><em class="property"> <span class="pre">=</span> <span class="pre">&lt;_abc_data</span> <span class="pre">object&gt;</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution._abc_impl" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.UniformDistribution._abc_negative_cache">
-<code class="sig-name descname">_abc_negative_cache</code><em class="property"> = &lt;_weakrefset.WeakSet object&gt;</em><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution._abc_negative_cache" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.UniformDistribution._abc_negative_cache_version">
-<code class="sig-name descname">_abc_negative_cache_version</code><em class="property"> = 49</em><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution._abc_negative_cache_version" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
-
-<dl class="py attribute">
-<dt id="flownet.parameters.probability_distributions.UniformDistribution._abc_registry">
-<code class="sig-name descname">_abc_registry</code><em class="property"> = &lt;_weakrefset.WeakSet object&gt;</em><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution._abc_registry" title="Permalink to this definition">¶</a></dt>
+<dt id="flownet.parameters.probability_distributions.UniformDistribution.defined">
+<code class="sig-name descname"><span class="pre">defined</span></code><em class="property"><span class="pre">:</span> <span class="pre">bool</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution.defined" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt id="flownet.parameters.probability_distributions.UniformDistribution.ert_gen_kw">
-<em class="property">property </em><code class="sig-name descname">ert_gen_kw</code><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution.ert_gen_kw" title="Permalink to this definition">¶</a></dt>
-<dd><p>string representing an ERT “UNFIORM MIN MAX” distribution keyword for use in GEN_KW</p>
+<em class="property"><span class="pre">property</span> </em><code class="sig-name descname"><span class="pre">ert_gen_kw</span></code><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution.ert_gen_kw" title="Permalink to this definition">¶</a></dt>
+<dd><p>string representing an ERT “UNIFORM MIN MAX” distribution keyword for use in GEN_KW</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.UniformDistribution.maximum">
+<code class="sig-name descname"><span class="pre">maximum</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution.maximum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.UniformDistribution.mean">
+<code class="sig-name descname"><span class="pre">mean</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution.mean" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.UniformDistribution.minimum">
+<code class="sig-name descname"><span class="pre">minimum</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution.minimum" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.UniformDistribution.mode">
+<code class="sig-name descname"><span class="pre">mode</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution.mode" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.UniformDistribution.name">
+<code class="sig-name descname"><span class="pre">name</span></code><em class="property"><span class="pre">:</span> <span class="pre">str</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution.name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt id="flownet.parameters.probability_distributions.UniformDistribution.stddev">
+<code class="sig-name descname"><span class="pre">stddev</span></code><em class="property"><span class="pre">:</span> <span class="pre">float</span></em><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution.stddev" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="flownet.parameters.probability_distributions.UniformDistribution.update_distribution">
+<code class="sig-name descname"><span class="pre">update_distribution</span></code><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">minimum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">maximum</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mean</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">mode</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stddev</span></span><span class="p"><span class="pre">:</span></span> <span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span> <span class="o"><span class="pre">=</span></span> <span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#flownet.parameters.probability_distributions.UniformDistribution.update_distribution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Function that updates the parameters that defines the probability distribution.</p>
+<dl class="simple">
+<dt>The following input combinations will make changes to the distribution:</dt><dd><ul class="simple">
+<li><p>Giving a new minimum value as input will trigger calculation of a new mean and standard deviation</p></li>
+<li><p>Giving a new maximum value as input will trigger calculation of a new mean and standard deviation</p></li>
+<li><dl class="simple">
+<dt>Giving a new mean value as input requires a new minimum OR maximum value to be defined also</dt><dd><ul>
+<li><p>A new mean value and a new minimum value will trigged an update of the maximum value and the stddev</p></li>
+<li><p>A new mean value and a new maximum value will trigged an update of the minimum value and the stddev</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+<p>Providing values for stddev or mode has no effect here, since the uniform distribution has no mode, and the
+stddev is calculated from the minimum and maximum values</p>
+<p>Providing a new mean, a new minimum and a new maximum value (all three of them) will trigger an error</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>minimum</strong> – The minimum values of the updated distribution</p></li>
+<li><p><strong>mean</strong> – The mean value of the updated distribution</p></li>
+<li><p><strong>mode</strong> – The mode of the updated distribution</p></li>
+<li><p><strong>maximum</strong> – The maximum value of the updated distribution</p></li>
+<li><p><strong>stddev</strong> – The standard deviation of the updated distribution</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Nothing</p>
+</dd>
+</dl>
 </dd></dl>
 
 </dd></dl>
@@ -303,37 +672,29 @@ parameter class definitions.</p>
            
           </div>
           <footer>
-  
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-      
-        <a href="flownet.prediction.html" class="btn btn-neutral float-right" title="flownet.prediction package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
-      
-      
-        <a href="flownet.parameters._rock_compressibility.html" class="btn btn-neutral float-left" title="flownet.parameters._rock_compressibility module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
-      
+        <a href="flownet.prediction.html" class="btn btn-neutral float-right" title="flownet.prediction package" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="flownet.parameters._rock_compressibility.html" class="btn btn-neutral float-left" title="flownet.parameters._rock_compressibility module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
-  
 
   <hr/>
 
   <div role="contentinfo">
     <p>
-        
-        &copy; Copyright 2020, Equinor
+        &#169; Copyright 2020, Equinor.
 
     </p>
   </div>
     
     
     
-    Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a
+    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     
-    <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a>
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     
     provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
-
         </div>
       </div>
 
