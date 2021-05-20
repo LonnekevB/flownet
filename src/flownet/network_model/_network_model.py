@@ -528,6 +528,10 @@ class NetworkModel:
             self.total_bulkvolume
             * self.grid["cell_length"].values
             / self.grid.loc[self.grid["ACTNUM"] == 1, "cell_length"].sum()
+<<<<<<< HEAD
+=======
+            * self.grid["ACTNUM"].values
+>>>>>>> 85f661fea0c94f67d94e0411d2328df16c204987
         )
 
     @property
